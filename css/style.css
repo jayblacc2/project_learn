@@ -1,0 +1,254 @@
+:root {
+  --primary-color: #ebe7e7;
+  --link-size-font: 0.9rem;
+  --secondary-color: #1089ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* UTILITY CLASSES */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+.l-heading {
+  font-size: 3rem;
+}
+.btn-primary {
+  border: 0.5px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  outline: none;
+  font-size: var(--primary-color);
+  padding: 0.2rem 0.7rem;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #5068cc;
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 -2px 5px #a0a0a0;
+  transition: all 0.2s;
+  margin: 2rem 0;
+}
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+.bg-light {
+  color: var(--secondary-color);
+  background: #fff;
+}
+.text-center {
+  text-align: center;
+}
+/* UTILITY CLASSED  ENDS*/
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 200;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0 2rem;
+  overflow: none;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.header {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 94, 236, 0.7),
+    rgba(41, 54, 238, 0.829)
+  );
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.nav .logo-box img {
+  width: 15rem;
+  height: auto;
+  padding-left: 4rem;
+}
+.nav .navbar-box {
+  display: flex;
+  margin-right: 4rem;
+}
+.nav .navbar-links {
+  display: flex;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+.nav .navbar-links .nav-link {
+  padding: 0 1.5rem;
+}
+.nav .navbar-links .nav-link a {
+  font-size: var(--link-size-font);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.nav .navbar-links .nav-link a:hover {
+  color: #fff;
+}
+
+.btn-primary i {
+  margin-right: 0.4rem;
+}
+
+.navbar-box .btn-box {
+  display: flex;
+  flex-direction: column;
+}
+.secondary-link {
+  color: var(--primary-color);
+  align-self: center;
+  font-size: 0.7rem;
+  word-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+.navbar-box .btn-box .secondary-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* showcase contents */
+
+.header .showcase-content {
+  text-align: center;
+}
+
+.header .showcase-content .dev-icons img {
+  width: 8%;
+  margin: 2.5rem 0.6rem 1.5rem;
+  transition: all 0.3s;
+}
+.header .showcase-content .lead-text {
+  font-size: 1.5rem;
+  animation: animateDown 2s forwards alternate ease;
+}
+.header .showcase-content .dev-icons img:hover {
+  background: rgba(250, 250, 250, 0.822);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.showcase-content .btn-secondary i {
+  margin-right: 0.5rem;
+}
+
+.showcase-content .secondary-link {
+  font-size: 1rem;
+  display: inline-block;
+  color: var(--primary-color);
+  transition: all 0.5s;
+  margin: 0.9rem 0;
+}
+.showcase-content .secondary-link:hover {
+  border-bottom: 0.5px solid #fff;
+  padding-bottom: 0.07rem;
+}
+.showcase-content .animate-icon {
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+  animation: animateIcon 1s alternate infinite ease-in-out;
+}
+
+/* SECTION HOW-TO */
+.how-to {
+  --text-how-to: #838383;
+  color: var(--text-how-to);
+}
+.how-to .container {
+  padding: 6rem 0;
+}
+.how-to .flex-row {
+  display: flex;
+  justify-content: center;
+}
+.how-to .secondary-heading {
+  font-weight: 200;
+}
+.how-to .secondary-heading .primary-l-heading {
+  font-weight: 700;
+  color: #000;
+}
+.how-to .flex-row .img-box {
+  width: 20rem;
+  height: 9rem;
+  border-bottom: 1px solid var(--text-how-to);
+}
+.how-to .flex-row .fa-random {
+  align-self: center;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.flex-row .img-box img {
+  width: 90%;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* Keyframe animation */
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+    z-index: -1;
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animateIcon {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+/* .header .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
