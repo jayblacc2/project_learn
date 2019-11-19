@@ -159,9 +159,10 @@ a {
   animation: animateDown 2s forwards alternate ease;
 }
 .header .showcase-content .dev-icons img:hover {
-  background: rgba(250, 250, 250, 0.822);
-  opacity: 0.4;
-  border-radius: 50%;
+  background: rgba(239, 240, 240, 0.945);
+  opacity: 0.6;
+  /* border-radius: 50%; */
+  padding: 0.5rem;
 }
 
 .showcase-content .btn-secondary i {
