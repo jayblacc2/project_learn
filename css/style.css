@@ -296,7 +296,7 @@ a {
   margin: 2rem;
   line-height: 1.6;
   text-align: center;
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 .course-cards .card .card-img img {
   display: block;
@@ -306,16 +306,13 @@ a {
 .course-cards .card h2 {
   color: #000;
   font-weight: 400;
-  transition: all 0.3s;
 }
 .course-cards .card p {
   color: #969696;
   font-size: 1.2rem;
-  transition: all 0.7s;
 }
 .course-cards .card i {
-  display: none;
-  transition: all 0.7s;
+  visibility: hidden;
 }
 .course-cards .card:hover {
   background: var(--secondary-color);
@@ -326,13 +323,13 @@ a {
   color: #fff;
 }
 .course-cards .card:hover i {
-  display: block;
+  visibility: visible;
   color: #fff;
   transform: translateX(-2px);
 }
-/* .course-cards .card h2:hover {
-  color: #fff;
-} */
+.course-cards .card:hover .card-img img {
+  transform: scale(1.1);
+}
 
 /* SECTION ENDS */
 
