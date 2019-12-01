@@ -312,7 +312,7 @@ a {
   font-size: 1.2rem;
 }
 .course-cards .card i {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .course-cards .card:hover {
   background: var(--secondary-color);
@@ -322,10 +322,13 @@ a {
 .course-cards .card:hover h2 {
   color: #fff;
 }
+.course-cards .card:hover p {
+  color: #dfdfdfee;
+}
 .course-cards .card:hover i {
-  visibility: visible;
+  /* visibility: visible; */
   color: #fff;
-  transform: translateX(-2px);
+  animation: iconright 0.2s alternate-reverse ease-out;
 }
 .course-cards .card:hover .card-img img {
   transform: scale(1.1);
@@ -338,7 +341,7 @@ a {
   0% {
     opacity: 0;
     transform: translateY(5rem);
-    z-index: -1;
+    /* z-index: -1; */
   }
   80% {
     transform: translateY(-1rem);
@@ -346,6 +349,16 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes iconright {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-20px);
   }
 }
 /* @keyframes animateIcon {
