@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,12 +33,12 @@
         </div>
         <div class="navbar-box">
           <ul class="navbar-links">
-            <li class="nav-link"><a href="#" class="btn">Topics</a></li>
-            <li class="nav-link"><a href="#" class="btn">Pro</a></li>
-            <li class="nav-link"><a href="#" class="btn">About</a></li>
+            <li class="nav-link"><a href="#" class="current">Topics</a></li>
+            <li class="nav-link"><a href="#go-pro">Pro</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
           </ul>
           <div class="btn-box">
-            <a href="https://github.com" class="btn-primary"
+            <a href="https://github.com" class="btn btn-primary"
               ><i class="fab fa-github"></i>Sign in with Github</a
             >
             <a href="#" class="secondary-link">or via email</a>
@@ -64,9 +64,11 @@
           <a href="" class="btn-secondary btn bg-light"
             ><i class="fas fa-bookmark"></i>Browse our courses</a
           >
+          <a href="#courses" class="secondary-link"
+            >Learn more
+            <i class="fas fa-chevron-down fa-2x animate-icon"></i>
+          </a>
         </div>
-        <a href="#courses" class="secondary-link">Learn more</a>
-        <i class="fas fa-chevron-down fa-2x animate-icon"></i>
       </div>
     </header>
 
@@ -94,11 +96,13 @@
             />
           </div>
         </div>
-        <a href="#" class="bg-info app-link">
+        <a href="#" class="btn bg-info btn-lg">
           Start building fullstack Apps <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </section>
+    <!-- SECTION LEARN MORE COURSES  -->
+
     <!-- SECTION LEARN MORE COURSES  -->
     <section id="courses" class="course bg-gray">
       <h2 class="m-heading">
@@ -109,7 +113,7 @@
           <div class="card-img">
             <img src="images/img-cards/js.png" alt="js-icon" />
           </div>
-          <h2 class="m-heading">Javascript</h2>
+          <h3 class="m-heading">Javascript</h3>
           <p>JavaScript is the wold's most ubiquitous language.</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -117,7 +121,7 @@
           <div class="card-img">
             <img src="images/img-cards/react.png" alt="" />
           </div>
-          <h2 class="m-heading">Javascript</h2>
+          <h3 class="m-heading">React</h3>
           <p>Create web and mobile applications with reusable components.</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -125,7 +129,7 @@
           <div class="card-img">
             <img src="images/img-cards/angular.png" alt="angular_icon" />
           </div>
-          <h2 class="m-heading">Javascript</h2>
+          <h3 class="m-heading">Angular</h3>
           <p>Build modern universal web and mobile applications.</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -133,15 +137,18 @@
           <div class="card-img">
             <img src="images/img-cards/node_icon.png" alt="node_icon" />
           </div>
-          <h2 class="m-heading">Node.js</h2>
-          <p>Build full stack web apps using javascript on the fontend &amp; backend</p>
+          <h3 class="m-heading">Node.js</h3>
+          <p>
+            Build full stack web apps using javascript on the fontend &amp;
+            backend
+          </p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
         <div class="card">
           <div class="card-img">
             <img src="images/img-cards/netlify.png" alt="netlify" />
           </div>
-          <h2 class="m-heading">Netlify</h2>
+          <h3 class="m-heading">Netlify</h3>
           <p>Quick deploy your apps and build microservices using nelify</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -149,7 +156,7 @@
           <div class="card-img">
             <img src="images/img-cards/redux_ds.png" alt="redux" />
           </div>
-          <h2 class="m-heading">Redux</h2>
+          <h3 class="m-heading">Redux</h3>
           <p>Create stable javascript applications using state container.</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -157,7 +164,7 @@
           <div class="card-img">
             <img src="images/img-cards/vue.png" alt="vue_icon" />
           </div>
-          <h2 class="m-heading">Vue</h2>
+          <h3 class="m-heading">Vue</h3>
           <p>Develop data-reactive interfaces with a simple and flexible API</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -165,7 +172,7 @@
           <div class="card-img">
             <img src="images/img-cards/dotnet.png" alt=".net" />
           </div>
-          <h2 class="m-heading">.NET</h2>
+          <h3 class="m-heading">.NET</h3>
           <p>Build your next web app with C# and .NET Core</p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
@@ -173,8 +180,11 @@
           <div class="card-img">
             <img src="images/img-cards/gasby.png" alt="Gasby" />
           </div>
-          <h2 class="m-heading">Javascript</h2>
-          <p>Gasby is free and open source framework based on Reacthelps build blazing fast website and apps</p>
+          <h3 class="m-heading">Gasby</h3>
+          <p>
+            Gasby is free and open source framework based on Reacthelps build
+            blazing fast website and apps
+          </p>
           <i class="fas fa-long-arrow-alt-right fa-3x"></i>
         </div>
         <!-- <div class="card">
@@ -197,14 +207,119 @@
         </div> -->
       </div>
     </section>
-    <!-- <script>
-      let guesNum = prompt("Enter ur guess: ");
-      if (guesNum > 20 || +!guesNum) {
-        alert("Enter Number less than 20");
-      } else {
-        let randomNum = Math.random() * 20 + 1;
-        alert(Math.floor(randomNum));
-      }
-    </script> -->
+
+    <!-- SECTION BUILD REAL APP -->
+    <section id="build-app" class="bg-purple">
+      <div class="container app-row">
+        <h2 class="">
+          It's all about building real world, production ready
+          <span>apps.</span>
+        </h2>
+        <div class="build-row">
+          <div class="img-build">
+            <img src="images/prio.png" alt="" />
+          </div>
+          <div class="app-text">
+            <p>
+              While most "todo" demos provide an excellent cursory glance at a
+              framework's capabilities, they typically don't convey the
+              knowledge & perspective required to actually build real
+              applications with it. That's why we, with the help of open source
+              experts, design all of our tutorial projects to serve as exemplary
+              real world applications for each framework.
+            </p>
+            <a href="#" class="btn btn-app"
+              >Learn about the real world Projects
+              <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SKILLS -->
+    <section id="skills" class="text-center">
+      <div class="container col-skills">
+        <h3>Trusted by over <span>3 million</span> Javascript devs</h3>
+        <div class="skill">
+          <div class="skill-row">
+            <div class="icon-div"><i class="fas fa-trophy fa-5x"></i></div>
+            <div class="skill-content">
+              <h2>Career opportunities, unleashed</h2>
+              <p>
+                Land the promotion, join your dream company, or strike out on
+                your own. We help you succeed in your career.
+              </p>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="icon-div">
+              <i class="fas fa-graduation-cap fa-5x"></i>
+            </div>
+            <div class="skill-content">
+              <h2>Keep your skills up-to-date</h2>
+              <p>
+                Javascript frameworks are constantly changing. We ensure you
+                always know what the latest are & how to use them.
+              </p>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="icon-div">
+              <i class="fas fa-tachometer-alt fa-5x"></i>
+            </div>
+            <div class="skill-content">
+              <h2>Confidence & expertise</h2>
+              <p>
+                You can't fake the confidence, or the resume, that building
+                numerous real world applications gives you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION LEVEL UP GO PRO -->
+    <section id="go-pro" class="bg-gray text-center text-dark">
+      <div class="container">
+        <h2 class="l-heading">
+          Level up your programming skills.
+          <span class="text text-secondary"
+            ><a href="#" target="_blank">Go Pro!</a></span
+          >
+        </h2>
+        <p class="">
+          “Your fullstack dev courses are what got me hired at my current job.”
+        </p>
+        <small class="my-2"> Ronny, Javascript Engineer (Chicago, IL)</small>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer" class="bg-light">
+      <div class="footer-box text-center">
+        <ul class="footer-nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">Pro</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <p class="text-dark">
+          &copy; <time datetime="2008">2019</time> Thinster
+        </p>
+        <p style="font-size: 0.8rem">
+          <small>Privacy Policy | Terms of use </small>
+        </p>
+      </div>
+      <!-- <div class="top">
+      <a href="#top" id="top"><i class="fas fa-chevron-up fa-3x"></i></a>
+      </div> -->
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
