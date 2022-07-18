@@ -332,9 +332,7 @@ a {
   color: #969696;
   font-size: 1.2rem;
 }
-.course-cards .card i {
-  /* visibility: hidden; */
-}
+
 .course-cards .card:hover {
   background: var(--secondary-color);
   transform: scale(1.1);
@@ -389,7 +387,7 @@ a {
   margin: 2rem;
   line-height: 1.6;
   text-align: center;
-  transition: all 0.3s;
+  transition: all 0.5s ease;
 }
 .course-cards .card .card-img img {
   display: block;
@@ -404,9 +402,7 @@ a {
   color: #969696;
   font-size: 1.2rem;
 }
-.course-cards .card i {
-  /* visibility: hidden; */
-}
+
 .course-cards .card:hover {
   background: var(--secondary-color);
   transform: scale(1.1);
